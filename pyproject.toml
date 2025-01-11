@@ -6,7 +6,7 @@ authors = [
     {name = "Your Name",email = "you@example.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = "^3.11"
 dependencies = [
 ]
 
@@ -14,3 +14,17 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+blue = "^0.9.1"
+isort = "^5.13.2"
+taskipy = "^1.14.1"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.5.49"
+mkdocstrings = "^0.27.0"
+mkdocstrings-python = "^1.13.0"
+
